@@ -1,0 +1,31 @@
+body{ 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes colorPulse {
+    0%, 20%, 50%, 80%, 100% {
+        background-color: brown;
+    }
+    50% {
+       background-color: aquamarine;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+.color-plus { 
+    width: 200px; 
+    height:200px; 
+    background-color: red; 
+    border-radius: 50%;
+    animation-name: colorPulse;
+    animation-duration: 2s;
+    animation-iteration-count: bounce;
+    border-radius: 50%;
+}
