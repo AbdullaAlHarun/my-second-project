@@ -1,0 +1,54 @@
+
+body{ 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main { 
+    gap: 2rem; 
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-box { 
+    width: 200px; 
+    height:200px; 
+    background-color: red; 
+    border-radius: 100%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-bottom: 10px;
+}
+
+.red { 
+    background: red;
+    animation-duration: 2s;
+}
+.green { 
+    background: green;
+    animation-duration: 1s;
+}
+.yellow { 
+    background: yellow;
+    animation-duration: 3s;
+}
